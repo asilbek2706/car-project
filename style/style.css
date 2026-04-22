@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -5,11 +6,14 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-color: var(--primary-bg);
+}
+
 .container {
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
-    background-color: var(--primary-bg);
 }
 
 /* Navbar section styles */
@@ -62,12 +66,12 @@
     border-radius: 5px;
     padding: 10px;
     transition: all 0.3s ease-in-out;
-    text-decoration: underline;
 }
 
 .navbar-link {
     color: var(--navbar-links-color);
     text-decoration: none;
+    padding: 10px;
 }
 
 .navbar-button {
@@ -81,9 +85,99 @@
 }
 
 .header-button {
+    color: var(--navbar-brand-color);
     background-color: transparent;
     border: none;
     outline: none;
     cursor: pointer;
 }
+
 /* /Navbar section styles */
+
+/* Banner */
+#banner {
+    background: url('../assets/images/mountain.png') no-repeat center center/cover;
+    height: 75vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+.banner-container {
+    position: relative;
+    height: 100%;
+}
+
+.banner-car__image {
+    position: absolute;
+    left: 50px;
+    bottom: -40px;
+    max-width: 700px;
+    z-index: 2;
+}
+
+.banner-details {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    padding-right: 80px;
+}
+
+.banner-details__info {
+    max-width: 500px;
+    z-index: 1;
+}
+
+.banner-details__intro {
+    padding: 8px 20px;
+    background-color: var(--primary-buttons-color);
+    color: #ffffff;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.banner-details__title {
+    font-size: 48px;
+    color: var(--primary-text-color);
+    background-color: cadetblue;
+    padding: 15px 5px 15px 15px;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.banner-pricing {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.banner-details__logo {
+    background-color: var(--primary-buttons-color);
+    color: var(--primary-text-color);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.banner-details__money {
+    color: var(--primary-text-color);
+    font-size: 55px;
+    font-weight: 500;
+}
+
+.banner-details__money sup {
+    font-size: 37px;
+}
+
+/* /Banner */
