@@ -3,5 +3,11 @@
     --primary-buttons-color: #ef1616;
     --navbar-links-color: #757070;
     --navbar-brand-color: #ffffff;
-    --primary-text-color: #ffffff;
+    --primary-text-color: rgb(255, 255, 255, 100);
+    --banner-title-bg: cadetblue;
+    --search-field-bg: #ffffff;
+    --search-input-color: #888888;
+    --search-button-bg: #ef1616;
+    --search-button-bg-hover: #630a0a;
+    --white-text-color: #ffffff;
 }
